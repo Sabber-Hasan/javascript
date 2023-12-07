@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>I am trying to make bulb on-off with JavaScript</h1>
+    <div><span><img id="b_o" src="assets/images/bulb-off.png" alt=""></span> <span><button onclick="on()">Light
+                on</button> <button onclick="off()">Light off</button></span></div>
+                <h2>Yes! I have done this with JavaScript.</h2>
+                <script>
+                    function on(){
+                        document.getElementById("b_o").src="assets/images/bulb-on.png"
+                    }
+                    function off(){
+                        document.getElementById("b_o").src="assets/images/bulb-off.png"
+                    }
+                </script>
+</body>
+
+</html>

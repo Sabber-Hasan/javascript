@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: block;
+            text-align: end;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        textarea{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body id="jsb">
+    <h1>javascript For Loop</h1>
+    <span>
+        <button onclick="mode()">Dark Mode </button>
+        <button onclick="model()">Light Mode</button>
+    </span>
+    <textarea name="" id="" cols="30" rows="10" ></textarea>
+    <p id="js"></p>
+    <!-- <a href="#">it does change</a> -->
+    <script>
+
+        let me = {
+            name: "sabber",
+            occupation: "student", round: "57", cours: "WDPF"
+        }
+        var td = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+        function mode() {
+            if (document.getElementById("jsb").style.backgroundColor = "black") {
+                document.getElementById("jsb").style.color = "white"
+            }
+
+        }
+        function model() {
+            if (document.getElementById("jsb").style.backgroundColor = "white") {
+                document.getElementById("jsb").style.color = "black"
+            }
+        }
+        /* document.getElementById("js").innerHTML = "I am " + me.name;
+        document.write ( me.name)
+ */
+        console.log(td.length)
+        document.getElementById("js").innerHTML = me.name
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+1. clone stamp
+2. magic wand
+3. slice tool
+3. gradient
+4. why we use box-model?
+5. position
+6. inline and block diff
+7. external css: advantage and disadvantage
+8. css meaning
+9. parent-child selector
+10. why we use nesting selector
+11. what is grouping
+12. z-index
+13. id and class
+14. overflow: auto and scroll
+15. 

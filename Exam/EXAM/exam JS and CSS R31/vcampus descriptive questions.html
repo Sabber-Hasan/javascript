@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div style="padding:1%; margin-top:0px;" class="clearfix"><div style='white-space:pre-wrap;'><h1>IDB-BISEW Descriptive questions on JavaScript</h1>
+<img data-media="577" class="media-image" src="http://vcampus.co/media/image/standard/577.jpg" alt="IDB-BISEW logo" title="IDB-BISEW logo"  />
+
+<h2>1. What are the characteristics of JavaScript?</h2>
+<blockquote class="callout-info">
+<strong>Answer</strong>
+1) JavaScript Lives in a Web Page
+2) JavaScript is not server side language. It is client side language because it is interpreted and run on the browser.
+3) It is weakly typed because it does not need to specify datatypes to declare variable (int, float, double etc) like c/c++.
+4) It is not programming language. It Interpreted language because browsers are interpret it.
+5) JavaScript is case sensitive.
+6) Semicolon(;) is optional
+7) String can be enclosed by using single quote (‘) or double quote(“”)
+8) // is used to specify single line comment and /* ... */ is used to specify multiline comment.
+</blockquote>
+
+<h2>2. What is the function of return statement?</h2>
+<blockquote class="callout-info">
+1. The role of the return statement is to provide the value of the expressions within the function.
+2. Whenever the return keyword occurs in the function it returns the value instantly as specified and end the function execution.
+</blockquote>
+
+<h2>3. What do you mean by local and global variable?</h2>
+<blockquote class="callout-info">
+<strong>Global variable:</strong> A global variable, as the name implies, has global scope and is defined in the entire script.
+
+<strong>Local variable:</strong> Local variables are local to the functions in which they are defined.
+</blockquote>
+
+<h2>4. What is the difference between while and do-while loop?</h2>
+<blockquote class="callout-info">
+<strong>While loop:</strong>  
+1. Initialization-&gt;condition-&gt;statement/increment is the sequence of while loop execution. 
+2. The while loop begins with a termination condition and keeps looping until the termination condition is met.
+3. If the condition is not true, none statement will execute within the loop because condition is checked before executing the statement. 
+
+<strong>Do-while loop:</strong> 
+1. Initialization-&gt;statement/interment-&gt;condition is the sequence of do-while loop execution. 
+2. Unlike the while loop, the do-while loop always executes statements in the loop in the first iteration of the loop.
+3. As the condition is checked after executing statements in the loop, at least once loop statements will be executed within the loop even if condition is false.
+</blockquote>
+
+<h2>5. What is the function of break and continue statement?</h2>
+<blockquote class="callout-info">
+<strong>Break:</strong> &quot;break&quot; statement is used to exit from loop and selection structure. break statement is widely used in switch-case and loop.
+
+<strong>Continue:</strong> The &quot;continue&quot; statement tells the interpreter to immediately start the next iteration of the loop and skip remaining code block.
+</blockquote>
+
+<h2>6. What do you mean by Array? How will you declare an array?</h2>
+<blockquote class="callout-info">
+<strong>Array:</strong>
+1. Array is a compound data structure in computing.
+2. It is as a collection of numbered variable.
+
+An array in javaScript have the following general syntax to declare:
+
+1. var a=new Array();
+2. var a=[];
+</blockquote>
+
+<h2>7. What is the difference between “==” and “===” operator?</h2>
+<blockquote class="callout-info">
+1. Both are comparison operators but
+2. &quot;==&quot; test for equally operator compares its operands with only value ignoring the datatype.
+3. Whereas &quot;===&quot; test for strict equally operator compares its operands with datatypes and the value.
+</blockquote>
+
+<h2>8. What do you mean by “with” statements? Write it’s syntax.</h2>
+<blockquote class="callout-info">
+<strong>With statement:</strong>
+1. JavaScript’s with statement was intended to provide a shorthand for writing recurring accesses to objects.
+2. Instead of having to list all of the properties of an object by repeating the basic object, we can state the bulk of the object in a with statement and then the properties within the context of the with statment.
+
+<strong>Syntax:</strong>
+with (object){
+  statement
+}
+<pre class="prettyprint linenums">
+Example:
+var a, x, y;
+var r = 10;
+with (Math) {
+  a = PI * r * r;
+  x = r * cos(PI);
+  y = r * sin(PI / 2);
+}
+</pre>
+
+<pre class="prettyprint linenums">
+var a, x, y;
+var r = 10;
+
+  a = Math.PI * r * r;
+  x = r * Math.cos(PI);
+  y = r * Math.sin(PI / 2);
+
+</pre>
+</blockquote>
+
+<h2>9. What do you mean by DOM? Write its properties.</h2>
+<blockquote class="callout-info">
+Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML and XML documents.
+
+Some of Document Properties:
+a. AlinkColor
+b. Anchors[array]
+c. BgColor
+d. Cookie
+e. Domain
+g. Forms[array]
+h. Images[array]
+i. LinkColor
+j. Links[array]
+k. Location
+l. Title
+</blockquote>
+
+<h2>10. What is history object? Write methods of it.</h2>
+<blockquote class="callout-info">
+<strong>history object:</strong> 
+1. The history object is a property of the window object. It has a single property name length. 
+2. The history object contains the URLs visited by the user (within a browser window).
+
+<strong>functions:</strong> 
+1. back() - Loads the previous URL in the history list.
+2. forward() - Loads the next URL in the history list.
+3. go() - Loads a specific URL from the history list.
+</blockquote>
+
+<h2>11. What do you mean by cookies?</h2>
+<blockquote class="callout-info">
+<strong>Cookie:</strong>
+1. A cookie is usually a small piece of data sent from a website and stored in a user&#039;s web browser while a user is browsing a website. 
+2. When the user browses the same website in the future, the data stored in the cookie can be retrieved by the website to notify the website of the user&#039;s previous activity.
+3. Cookies were designed to be a reliable mechanism for websites to remember the state of the website or activity the user had taken in the past
+
+The general format for setting a cookie is this:
+<pre class="prettyprint linenums">
+document.cookie=value;[expires];[path];[domain];[secure];
+</pre>
+</blockquote>
+
+<h2>12. What is reserved word? Write five reserved word.</h2>
+<blockquote class="callout-info">
+<strong>Reserved words</strong>
+1. Reserved words are those in JavaScript that have been reserved for statements and bulit-in functions. 
+2. We should avoid creating identifier for variable and functions that are identical to JavaScript reserved word.
+
+Five reserved words are:
+1. function
+2. for
+3. return
+4. break
+5. continue
+</blockquote>
+
+<h2>13. Write about ‘interpreted’ and ‘loosely typed language’ according to JavaScript?</h2>
+<blockquote class="callout-info">
+<strong>An Interpreted Language:</strong> The process involves by browser parsing (interpreting) the JavaScript code and then creating an equivalent machine language and execute the interpreted code.
+
+<strong>Loosely typed language:</strong> The language that does not require to specify the datatype (int, float, boolean, string etc.) before declaring variables. 
+</blockquote>
+
+<h2>14. What do you mean by events and events handler?</h2>
+<blockquote class="callout-info">
+1. Events are actions that can be detected by JavaScript.
+2. Every element on a web page has certain events which can trigger a JavaScript.
+3. Events are normally used in combination with functions.
+
+Examples of events: -Clicking a button (or any other HTML element)
+-A page is finished loading
+-An image is finished loading
+-Moving the mouse-cursor over an element
+-Entering an input field
+-Submitting a form
+-A keystroke 
+
+<strong>Event handler:</strong> Event handlers are the way JavaScript deals with events. JavaScript contains a variety of event handlers for various purposes.
+Example of some event handlers are: onclick, onload, onkeypress, onmouseover etc.
+</blockquote>
+
+<h2>15. What is the difference between setInterval() and setTimeout()</h2>
+<blockquote class="callout-info">
+<strong>setInterval:</strong> The setInterval() method repeats a script action in specified milliseconds. initiating  the script after the specified number of milliseconds.
+
+<strong>setTimeout:</strong> The setTimeout() method  works the same as setInterval(), except that it does not repeat the script.
+</blockquote>
+
+<h2>16. What is the difference between substring() and substr()?</h2>
+<blockquote class="callout-info">
+Both substring() and substr() functions are used to extract a fragment of a string but  they perform the task in a different way. such as substring() enters the beginning and ending numeric positions of a part of the string to  extract, whereas the substr() specifies the position of the first character of the string  and number of characters to extract.
+Example:
+<pre class="prettyprint linenums">
+var str=&quot;Bangladesh&quot;;
+var res=str.substring(6,10);
+</pre>
+The result of res will be &#039;desh&#039;.
+<pre class="prettyprint linenums">
+var st=&quot;JavaScript&quot;; 
+var res=str.substr(4,6);
+</pre>
+The result of res will be &#039;Script&#039;.
+</blockquote>
+
+<h2>17. What is the function of charAt()?</h2>
+<blockquote class="callout-info">
+The charAt() method returns the character at the specified index in a string.
+
+The index of the first character is 0, the second character is 1, and so on.
+Example:
+<pre class="prettyprint linenums">
+var character=new String(&quot;Bangladesh&quot;);
+ character=character.charAt(5);
+document.write(character);
+</pre>
+output:&#039;a&#039;.
+</blockquote>
+
+<h2>18. What is the function of indexOf()?</h2>
+<blockquote class="callout-info">
+The indexOf() method returns the position of the first occurrence of a specified value in a string. This method returns- 1 if the value which is searched never occurs.
+Example:
+<pre class="prettyprint linenums">
+var str=&quot;Hello world, welcome to Bangladesh.&quot;
+var ind=str.indexOf(&quot;welcome&quot;);
+</pre>
+Output:13
+</blockquote>
+
+<h2>19. What is function? How can you define function in JavaScript?</h2>
+<blockquote class="callout-info">
+<strong>Function:</strong>
+1. A colloection of statements/code which can perform a specific task and can be executed by an event of call to that function. 
+2. We can have a) Built-in function and 2) User-defined functions
+
+Syntax of defining a function:
+<pre class="prettyprint linenums">
+function functionName(functionParameter list){ 
+   //statements
+}
+</pre>
+
+Example:
+<pre class="prettyprint linenums">
+function add(a,b){
+   return a+b;
+}
+</pre>
+</blockquote>
+
+<h2>20. What are the difference between alert() and prompt()?</h2>
+<blockquote class="callout-info">
+<strong>Alert():</strong> The alert() function displays a message on the web page for the users. In this case the users need nothing to do except click to close to it.
+
+<strong>prompt():</strong> The prompt() function also displays a message/statements for the users but in this the users can also input data in the input box.
+</blockquote>
+
+21. What is the function of typeof operator in JavaScript?
+22. What do you mean by object? Write 5 built in objects in JavaScript?
+23. What is the function of floor(), ceil() and round() methods of Math object?
+24. How to use ternary operator in JavaScript?
+25. What is escape sequence? How to use this?
+26. What is Regular Expression?
+27. What are JavaScript Data Types?
+28. What is the difference between undefined value and null value?
+29. What is eval() in JavaScript?
+30. Define escape sequence.
+31. Define concatenation</div><div class='nav clearfix'><nav style='float:left;'><a rel='first' href='http://vcampus.co/blogs/1782/doctype-html-public-w3c-dtd-xhtml-1-0-transitional-en-http-www-w3' class='uibutton'>First</a><a rel='prev' href='http://vcampus.co/blogs/4211/javascript-one-dimensional-array' class='uibutton'>Prev</a><a rel='next' href='http://vcampus.co/blogs/4234/input-validating-a-html-form-with-javascript-regular-expression' class='uibutton'>Next</a><a rel='last' href='http://vcampus.co/blogs/5664/numbers-program-positive-negative-and-zero-numbers' class='uibutton'>Last</a></nav><form action='#' method='post' style='float:left;'>&nbsp;<input style='padding:3px;width:40px;' type='text' name='txtPage' /> <input type='submit' name='btnGo' value='&nbsp;Go&nbsp;' class='uibutton'  /> </form><span style='float:left;'>&nbsp;&nbsp;<strong>21</strong> of 43</span></div></div>      
+</body>
+</html>

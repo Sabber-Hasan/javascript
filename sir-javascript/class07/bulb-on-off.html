@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #bulb{ display: block; margin: 0 auto;} */
+        div {
+            text-align: center;
+        }
+
+        #bulbon {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img width="200px" id="bulb" src="bulb-off.png" alt="">
+        <img width="200px" id="bulbon" src="bulb-on.png" alt="">
+    </div>
+    <br>
+    <button function="on()">On</button>
+    <button function="off()">Off</button>
+    <script>
+        function off() {
+            //  document.getElementById("bulb").style.disply = "block"
+        }
+        function on() {
+            if( document.getElementById("bulbon").style.disply = "block")
+        }
+    </script>
+</body>
+
+</html>
